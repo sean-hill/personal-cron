@@ -1,0 +1,20 @@
+{
+    "apps" : [{
+        "name"        : "Cron Tasks",
+        "script"      : "cron.js",
+        "env": {
+            "NODE_ENV": "production"
+        }
+    }],
+	"deploy" : {
+		"production" : {
+			"user" : "pi",
+			"host" : "sean-hill.ddns.net",
+			"port" : "8080",
+			"ref"  : "origin/master",
+			"repo" : "git@github.com:sean-hill/personal-cron.git",
+			"path" : "/var/www/cron-tasks",
+			"post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
+		}
+	}
+}

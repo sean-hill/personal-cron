@@ -1,0 +1,19 @@
+{
+  "name": "personal-cron",
+  "description": "My fun cron jobs",
+  "version": "1.0.0",
+  "dependencies": {
+    "cron": "^1.0.9",
+    "forecast": "^0.2.1",
+    "nodemailer": "^1.3.4",
+    "nodemailer-html-to-text": "^1.0.1",
+    "string-template": "^0.2.1"
+  },
+  "engines": {
+    "node": "0.12.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sean-hill/personal-cron.git"
+  }
+}
