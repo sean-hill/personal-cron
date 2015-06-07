@@ -8,9 +8,8 @@
     }],
 	"deploy" : {
 		"production" : {
-			"user" : "pi",
-			"host" : "sean-hill.ddns.net",
-			"port" : "8080",
+			"user" : "www-data",
+			"host" : "45.55.164.22",
 			"ref"  : "origin/master",
 			"repo" : "git@github.com:sean-hill/personal-cron.git",
 			"path" : "/var/www/cron-tasks",
