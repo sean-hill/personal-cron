@@ -4,6 +4,7 @@ var selenium = require('selenium-standalone');
 var Xvfb = require('xvfb');
 var xvfb = new Xvfb();
 var async = require('async');
+var path = require('path');
 
 exports.go = function(finished) {
 
@@ -48,6 +49,8 @@ exports.go = function(finished) {
 		else {
 			console.log('Selenium listening!');
 		}
+
+		require(path.resolve(__dirname, '../jobs/daily-gospel'));
 
 		if (finished) {
 			return finished();

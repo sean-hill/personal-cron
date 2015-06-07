@@ -39,3 +39,5 @@ function emailLinks(links, finished) {
     return finished();
 
 };
+
+job();
