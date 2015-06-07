@@ -20,14 +20,12 @@ WebScraper.addCommand('emailLinks', function(finished){
 // Job Function
 function job() {
 
-    setTimeout(function(){
-        console.log('Running daily gospel job:', new Date());
-        WebScraper
-            .init()
-            .url('https://lds.org')
-            .emailLinks()
-            .end();
-    }, 5000);
+    console.log('Running daily gospel job:', new Date());
+    WebScraper
+        .init()
+        .url('https://lds.org')
+        .emailLinks()
+        .end();
 
 };
 
@@ -41,5 +39,3 @@ function emailLinks(links, finished) {
     return finished();
 
 };
-
-job();
