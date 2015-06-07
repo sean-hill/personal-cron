@@ -30,9 +30,9 @@ exports.go = function(finished) {
 					return done(err);
 				}
 
-				// child.stderr.on('data', function(data){
-				// 	console.log(data.toString());
-				// });
+				child.stderr.on('data', function(data){
+					console.log(data.toString());
+				});
 
 				selenium.child = child;
 
