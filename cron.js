@@ -11,4 +11,4 @@ require(jobPath + '/forecast');
 // require(jobPath + '/daily-gospel');
 
 // Start Selenium
-// Selenium.go();
+Selenium.go();
