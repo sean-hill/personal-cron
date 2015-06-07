@@ -33,8 +33,7 @@ function emailLinks(links, finished) {
 
     if (links.length) {
         var message = format('Hi Sean,<br><br>Here are your daily gospel links!<br><br>{0}', links.join('<br><br>'))
-        console.log(message);
-        // Email.send('sean.daryl.hill@gmail.com', 'Gospel Links', message);
+        Email.send('sean.daryl.hill@gmail.com', 'Gospel Links', message);
     }
 
     return finished();
