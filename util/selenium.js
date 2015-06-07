@@ -50,8 +50,6 @@ exports.go = function(finished) {
 			console.log('Selenium listening!');
 		}
 
-		require(path.resolve(__dirname, '../jobs/daily-gospel'));
-
 		if (finished) {
 			return finished();
 		}
