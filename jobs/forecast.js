@@ -14,7 +14,7 @@ var forecast = new Forecast({
 
 // Make Job
 var CronJob = require('cron').CronJob;
-new CronJob('0 10 * * *', job, null, true, 'America/Denver');
+new CronJob('30 9 * * *', job, null, true, 'America/Denver');
 
 // Job Function
 function job() {
@@ -24,10 +24,10 @@ function job() {
     forecast.get(mesaLoc, function(err, weather) {
 
         var summary = format(
-            '<strong>Currently:</strong> {0}<br>' +
-            '<strong>Next hour:</strong> {1}<br>' + 
-            '<strong>Today:</strong> {2}<br>' + 
-            '<strong>This Week:</strong> {3}',
+            '<strong>Right Now:</strong> {0}<br>' +
+            '<strong>Next Hour:</strong> {1}<br>' + 
+            '<strong>Next 24 Hours:</strong> {2}<br>' + 
+            '<strong>Next 7 Days:</strong> {3}',
             weather.currently.summary,
             weather.minutely.summary,
             weather.hourly.summary,
