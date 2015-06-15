@@ -48,6 +48,7 @@ exports.go = function(finished) {
 		}
 		else {
 			console.log('Selenium listening!');
+			require('../jobs/daily-gospel');
 		}
 
 		if (finished) {

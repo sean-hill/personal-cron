@@ -7,7 +7,7 @@ module.exports = function() {
 
 	var options = {
 	    desiredCapabilities: { 
-	        browserName: 'chrome'
+	        browserName: 'firefox'
 	    } 
 	};
 

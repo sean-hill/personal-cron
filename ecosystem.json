@@ -7,9 +7,18 @@
         }
     }],
 	"deploy" : {
+		// "production" : {
+		// 	"user" : "www-data",
+		// 	"host" : "45.55.164.22",
+		// 	"ref"  : "origin/master",
+		// 	"repo" : "git@github.com:sean-hill/personal-cron.git",
+		// 	"path" : "/var/www/cron-tasks",
+		// 	"post-deploy" : "npm install && pm2 startOrRestart ecosystem.json --env production"
+		// }
 		"production" : {
-			"user" : "www-data",
-			"host" : "45.55.164.22",
+			"user" : "pi",
+			"host" : "sean-hill.ddns.net",
+			"port" : "8080",
 			"ref"  : "origin/master",
 			"repo" : "git@github.com:sean-hill/personal-cron.git",
 			"path" : "/var/www/cron-tasks",
