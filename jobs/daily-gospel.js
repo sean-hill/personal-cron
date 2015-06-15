@@ -29,8 +29,6 @@ function job() {
 
 };
 
-job();
-
 function emailLinks(links, finished) {
 
     if (links.length) {
